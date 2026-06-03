@@ -18,7 +18,7 @@
 - [&#10003] Hermetic Builds
 - [&#10003] Action Key
 - [ ] Sandbox Isolation
-- [ ] Dependency Management (Modern Bazel)
+- [&#10003] Dependency Management (Modern Bazel)
 - [ ] Macro
 - [ ] Aspect
 - [ ] Toolchain
@@ -29,7 +29,7 @@
 - [&#10003] Install Bazel in Linux
 - [&#10003] Build a C++ Project using Bazel
 - [&#10003] Build a Python Project using Bazel
-- [ ] Build a Java Project using Bazel  
+- [&#10003] Build a Java Project using Bazel  
 - [ ] Build a C# Project using Bazel  
 </pre>
 
@@ -174,3 +174,22 @@ bazel test //...
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a89d0e9c-b344-4fbf-ba33-d692189f6568" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/fc6ba6f3-32b9-4b95-9eee-9643eb8aec28" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/06a3a90f-e3b5-459f-a710-6ce60720caa6" />
+
+## Lab - Build a C$ project using Bazel
+
+```
+# Install ICU lib to support dotnet framework in linux
+sudo apt update && sudo apt install -y libicu-dev
+
+cd bazel-june-2026
+git pull
+cd day1/csharp-with-bazel
+cat MODULE.bazel
+cat BUILD.bazel
+tree
+
+bazel build //:hello
+bazel run //:hello
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/80d0e2db-b2d2-4d8b-8510-0028319520b3" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c2a5ee99-a6b2-457d-8aac-8743afcc2af4" />
