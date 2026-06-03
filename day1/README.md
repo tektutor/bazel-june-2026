@@ -170,6 +170,35 @@ gcc --version
   - Genrule Aciton
 </pre>
 
+## Info - Bazel Dependency
+<pre>
+- Bazel runs every build in 3 strict sequential phases
+- Each Phase must complete before the next begins
+- 3 Phases
+  - Phase 1 - Loading Phase
+  - Phase 2 - Analysis Phase
+  - Phase 3 - Execution Phase
+- What happens during Phase 1 - Loading Phase ?
+  - Reads BUILD file(s)
+  - Evaluates all load() statements and .bzl files
+  - Expands macros
+  - Constructs the target graph
+- What happens during Phase 2 - Analysis Phase ?
+  - Bazel takes the target graph from the loading phase and converts it into an action graph
+  - Runs the implementation function of every rule
+  - Resolves select() conditions for the current platform
+  - Determines exactly which actions need to need
+  - No files are read ror compiled yet during this phase, its pure analysis
+- What happens during the Phase 3 - Exection Phase ?
+  - Bazel runs the actions from the action graph to produce the build outputs
+  - Checks the local action cache for each action ( /home/jegan/.cache/bazel/_bazel_jegan/a1b2c3344)
+  - Checks the remote cache if configured (JFrog Artifactory or Sonatype Nexus or Gitea )
+  - Runs uncached actions in sandboxed environments
+  - Executes independent actions in parallel
+  - Writes outputs to bazel-out folder
+  - 
+</pre>
+
 ## Lab - Build a simple C++ project with Make build tool
 Clone this training repository
 ```
