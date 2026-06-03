@@ -17,13 +17,13 @@
 - [&#10003] Incrementality & Reproducibility
 - [&#10003] Hermetic Builds
 - [&#10003] Action Key
-- [ ] Sandbox Isolation
+- [&#10003] Sandbox Isolation
 - [&#10003] Dependency Management (Modern Bazel)
 - [ ] Macro
 - [ ] Aspect
-- [ ] Toolchain
+- [&#10003] Toolchain
 - [ ] Configuration
-- [ ] Visibility
+- [&#10003] Visibility
 - [ ] Tag
 - [&#10003] Introduction to modern build systems
 - [&#10003] Install Bazel in Linux
