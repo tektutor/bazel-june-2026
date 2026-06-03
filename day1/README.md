@@ -30,6 +30,7 @@
 - [&#10003] Build a C++ Project using Bazel
 - [&#10003] Build a Python Project using Bazel
 - [ ] Build a Java Project using Bazel  
+- [ ] Build a C# Project using Bazel  
 </pre>
 
 ## Lab - Install bazel and other build tools ( do this on your Ubuntu Cloud Lab Machine Terminal )
