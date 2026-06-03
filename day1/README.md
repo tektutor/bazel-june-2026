@@ -149,3 +149,28 @@ bazel clean
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/12b15d1f-c447-4bee-86ef-5e4bb551ec08" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0550b1e2-b1a4-4176-a10c-b3f0c51e0499" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/5441b6d8-99c5-4cf2-a09a-e55b599631fc" />
+
+## Lab - Build a Java project using Bazel
+```
+# Install JDK in case you haven't installed JDK
+sudo apt install -y openjdk-21-jdk-headless
+
+cd ~
+cd bazel-june-2026
+git pull
+cd day1/java-with-bazel
+cat MODULE.bazel
+cat BUILD.bazel
+tree
+bazel buid //:hello_world
+bazel run //:hello_world
+bazel run //...
+bazel test //:HelloTest
+bazel test //...
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7c09373a-d4ab-4400-8a3a-80f4a283db9a" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/bcb94a67-242c-454e-a609-70d768ccf5a3" />
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a89d0e9c-b344-4fbf-ba33-d692189f6568" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/fc6ba6f3-32b9-4b95-9eee-9643eb8aec28" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/06a3a90f-e3b5-459f-a710-6ce60720caa6" />
