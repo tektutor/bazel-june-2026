@@ -3,20 +3,20 @@
 ## Today's Agenda
 <pre>
 - [&#10003] Bazel Overview
-- [x] Why Bazel?
-- [x] Bazel High-Level Architecture
-- [x] Understanding Bazel Jargons
-- [x] Workspace
-- [x] Build Process & Artifacts
-- [x] Artifact
-- [x] Action
-- [x] Loading Phase
-- [x] Analysis Phase
-- [x] Execution Phase
-- [x] Dependency
-- [x] Incrementality & Reproducibility
-- [x] Hermetic Builds
-- [x] Action Key
+- [&#10003] Why Bazel?
+- [&#10003] Bazel High-Level Architecture
+- [&#10003] Understanding Bazel Jargons
+- [&#10003] Workspace
+- [&#10003] Build Process & Artifacts
+- [&#10003] Artifact
+- [&#10003] Action
+- [&#10003] Loading Phase
+- [&#10003] Analysis Phase
+- [&#10003] Execution Phase
+- [&#10003] Dependency
+- [&#10003] Incrementality & Reproducibility
+- [&#10003] Hermetic Builds
+- [&#10003] Action Key
 - [ ] Sandbox Isolation
 - [ ] Dependency Management (Modern Bazel)
 - [ ] Macro
@@ -25,9 +25,9 @@
 - [ ] Configuration
 - [ ] Visibility
 - [ ] Tag
-- [x] Introduction to modern build systems
-- [x] Install Bazel in Linux
-- [x] Build a C++ Project using Bazel
+- [&#10003] Introduction to modern build systems
+- [&#10003] Install Bazel in Linux
+- [&#10003] Build a C++ Project using Bazel
 - Build a Java Project using Bazel  
 </pre>
 
