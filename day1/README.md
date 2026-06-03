@@ -47,6 +47,7 @@ bazel --version
 g++ --version
 gcc --version
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/2fa7b554-5fc6-4c89-9d2d-335c79adb6df" />
 
 ## Info - Bazel Overview
 <pre>
@@ -78,7 +79,9 @@ bin/app
 Pull the delta changes
 ```
 cd ~
-cd bazel-june-2026/day1/cpp-with-cmake
+cd bazel-june-2026
+git pull
+cd day1/cpp-with-cmake
 tree
 mkdir -p bin
 cd bin
@@ -88,4 +91,39 @@ tree .
 
 
 ## Info - Bazel High-Level architecture
-![bazel](bazel_architecture_v4.svg)
+<img width=50% height=50% alt="image" src="bazel_architecture_v4.svg" />
+
+## Lab - Buid your first Bazel project
+```
+cd ~
+cd bazel-june-2026
+git pull
+cd day1/cpp-with-bazel
+cat MODULE.bazel
+cat src/BUILD
+
+bazel build //src:hello
+ls
+bazel run //src:hello
+bazel clean
+ls
+```
+
+## Lab - Build a multi-target Bazel project
+```
+cd ~
+cd bazel-june-2026
+git pull
+cd day1/bazel-lab1
+cat MODULE.bazel
+cat src/BUILD
+
+bazel build //sources:hello
+ls
+bazel run //sources:hello
+bazel clean
+ls
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c13697aa-67ab-46d1-a03e-8f7e8daaf599" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0b046b6f-9c0c-4f35-9a80-57d46c7ff37e" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/25ba98c7-2235-4b67-a49f-0360a0b9b0d6" />
