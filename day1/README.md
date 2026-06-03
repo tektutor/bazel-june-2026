@@ -127,3 +127,23 @@ ls
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c13697aa-67ab-46d1-a03e-8f7e8daaf599" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0b046b6f-9c0c-4f35-9a80-57d46c7ff37e" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/25ba98c7-2235-4b67-a49f-0360a0b9b0d6" />
+
+## Lab - BUild a multi-target Python based Bazel project
+```
+cd ~
+cd bazel-june-2026
+git pull
+cd day1/python-with-bazel
+cat MODULE.bazel
+cat src/BUILD.bazel
+
+bazel build //:app
+ls
+bazel run //:app
+bazel test //:test_lib --test_output=all
+ls -l
+bazel clean
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/12b15d1f-c447-4bee-86ef-5e4bb551ec08" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0550b1e2-b1a4-4176-a10c-b3f0c51e0499" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/5441b6d8-99c5-4cf2-a09a-e55b599631fc" />
