@@ -88,4 +88,4 @@ tree .
 
 
 ## Info - Bazel High-Level architecture
-![bazel](bazel_architecture_v4.svg)
+<img width=50% height=50% alt="image" src="bazel_architecture_v4.svg"
