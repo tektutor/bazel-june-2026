@@ -29,7 +29,7 @@
 - [&#10003] Install Bazel in Linux
 - [&#10003] Build a C++ Project using Bazel
 - [&#10003] Build a Python Project using Bazel
-- [ ] Build a Java Project using Bazel  
+- [&#10003] Build a Java Project using Bazel  
 - [ ] Build a C# Project using Bazel  
 </pre>
 
