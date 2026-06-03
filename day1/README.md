@@ -47,3 +47,15 @@ bazel --version
 g++ --version
 gcc --version
 ```
+
+## Info - Bazel Overview
+<pre>
+- is a build and test tool developed by Google and open sourced in year 2015
+- is a C/C++ build tool
+- technically, it is a language agnostic build tool as it supports
+  - Java
+  - C/C++
+  - Python
+  - Golang
+  - JavaScript and many more  
+</pre>
