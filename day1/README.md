@@ -85,3 +85,7 @@ cd bin
 cmake ..
 tree .
 ```
+
+
+## Info - Bazel High-Level architecture
+![bazel](bazel_architecture_v4.svg)
