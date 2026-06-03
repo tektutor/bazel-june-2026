@@ -59,3 +59,29 @@ gcc --version
   - Golang
   - JavaScript and many more  
 </pre>
+
+## Lab - Build a simple C++ project with Make build tool
+Clone this training repository
+```
+cd ~
+git clone https://github.com/tektutor/bazel-june-2026.git
+cd bazel-june-2026/day1/cpp-with-make
+tree
+make
+bin/app
+```
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/16480f9b-b244-4dd9-a877-62365babf0da" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/288623f0-e541-4391-8421-29dd4cd63ea6" />
+
+## Lab - Build a simple C++ project with CMake
+Pull the delta changes
+```
+cd ~
+cd bazel-june-2026/day1/cpp-with-cmake
+tree
+mkdir -p bin
+cd bin
+cmake ..
+tree .
+```
