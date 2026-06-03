@@ -18,7 +18,7 @@
 - [&#10003] Hermetic Builds
 - [&#10003] Action Key
 - [ ] Sandbox Isolation
-- [ ] Dependency Management (Modern Bazel)
+- [&#10003] Dependency Management (Modern Bazel)
 - [ ] Macro
 - [ ] Aspect
 - [ ] Toolchain
