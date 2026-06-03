@@ -28,6 +28,7 @@
 - [&#10003] Introduction to modern build systems
 - [&#10003] Install Bazel in Linux
 - [&#10003] Build a C++ Project using Bazel
+- [&#10003] Build a Python Project using Bazel
 - Build a Java Project using Bazel  
 </pre>
 
