@@ -2,7 +2,7 @@
 
 ## Today's Agenda
 <pre>
-- [x] Bazel Overview
+- [&#10003] Bazel Overview
 - [x] Why Bazel?
 - [x] Bazel High-Level Architecture
 - [x] Understanding Bazel Jargons
