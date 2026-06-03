@@ -47,6 +47,7 @@ bazel --version
 g++ --version
 gcc --version
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/2fa7b554-5fc6-4c89-9d2d-335c79adb6df" />
 
 ## Info - Bazel Overview
 <pre>
