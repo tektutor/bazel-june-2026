@@ -94,9 +94,15 @@ bazel build --config=debug //app:hello
 bazel build --config=release //app:hello
 ls
 tree bazel-out
+
+# To see the compiler flags used
+bazel build  //app:hello --subcommands
+bazel build --config=debug //app:hello --subcommands
+bazel build --config=release //app:hello --subcommands
 ```
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/2fce8668-eb29-4819-8c19-3f6c81ebf1a3" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/4073dee7-63da-4e6f-bd78-c9e1ff425301" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d2fa20b2-6b30-4fe7-90de-b67622185222" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/46ec7bf4-afaa-4792-b484-1cc4490f51cd" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/17981a28-faf3-4587-9320-c65180f0e27c" />
+bazel build --config=release //app:hello --subcommands
