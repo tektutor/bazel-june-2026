@@ -78,3 +78,25 @@ bazel query 'labels(deps, //test:hello_test)'
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/67a13b9c-50ad-465b-8683-c1e6309a37ab" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c5baac57-d868-4848-a8ae-8c2cd11494dc" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3a825b01-18dd-4ab3-98f9-e3be4390d1c7" />
+
+## Lab - Understanding Bazel Build Configurations
+```
+cd ~/bazel-june-2026
+git pull
+cd day2/cpp-bazel-with-gtest
+
+# Find all targets supported
+bazel query //...
+bazel build --compilation_mode=fastbuild //app:hello # Default build
+bazel build //app:hello # Default build
+
+bazel build --config=debug //app:hello
+bazel build --config=release //app:hello
+ls
+tree bazel-out
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/2fce8668-eb29-4819-8c19-3f6c81ebf1a3" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/4073dee7-63da-4e6f-bd78-c9e1ff425301" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d2fa20b2-6b30-4fe7-90de-b67622185222" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/46ec7bf4-afaa-4792-b484-1cc4490f51cd" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/17981a28-faf3-4587-9320-c65180f0e27c" />
