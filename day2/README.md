@@ -109,3 +109,32 @@ bazel build --config=release //app:hello --subcommands
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/46ec7bf4-afaa-4792-b484-1cc4490f51cd" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/17981a28-faf3-4587-9320-c65180f0e27c" />
 bazel build --config=release //app:hello --subcommands
+
+## Lab - What is a sandbox isolation in Bazel ?
+
+Note
+<pre>
+- Every build action runs in a private, temporary filesytem
+- it can only see files that were explicitly declared as inputs
+- For example, I may have 100 files in a bazel project folder,
+  but if I have declared only 5 files as input in cc_* blocks,
+  only those files are visible within sandbox folder for bazel.
+- The other 95 files though they are in your workmachine filesystem,
+  bazel sandbox can't see them.
+</pre>
+
+
+```
+cd ~/bazel-june-2026
+git pull
+cd day2/cpp-bazel-with-gtest
+cat MODULE.bazel
+cat app/BUILD
+cat lib/BUILD
+cat test/BUILD
+
+bazel aquery //app:hello --output=jsonproto 2>/dev/null | grep -oE '[^"]+\.(cpp|h|cc|c|cxx|hpp)' | grep -v "^/" | sort -u
+
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0a2ed050-03a3-4e54-8512-149b6de539d5" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/5ad70895-5017-494c-b6aa-bbe13aaebf27" />
