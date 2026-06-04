@@ -12,7 +12,7 @@
   - [ ] hands-on using Artifactory or Git-based registries
   - [ ] Custom rule development using Starlark
   - [ ] with practical examples (beyond macros)
-- [ ] Bazel testing framework
+- [&#10003] Bazel testing framework
 - [&#10003] including bazel test
 - [ ] test rules
 - [ ] basic coverage concepts  
