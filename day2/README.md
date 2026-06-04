@@ -13,7 +13,7 @@
   - [ ] Custom rule development using Starlark
   - [ ] with practical examples (beyond macros)
 - [ ] Bazel testing framework
-- [ ] including bazel test
+- [&#10003] including bazel test
 - [ ] test rules
 - [ ] basic coverage concepts  
 </pre>
