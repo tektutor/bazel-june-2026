@@ -266,7 +266,7 @@ cat MODULE.bazel
 cat BUILD
 cat defs.bzl
 cat config.txt.tpl
-
+azel build //test:hello_test --aspects //:list_sources.bzl%list_sources --output_groups=manifest
 bazel build //:app_config
 
 bazel clean
@@ -274,3 +274,31 @@ bazel clean
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a3a24b06-b9dc-42f1-9253-c2ac45307ae0" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/be5a510f-8c23-423e-b40b-067c05d79387" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c396dee0-17b7-4c0b-860d-0b563674692d" />
+
+## Lab - Bazel Aspect
+Note
+<pre>
+  
+</pre>
+
+```
+cd ~/bazel-june-2026
+git pull
+cd day2/bazel-aspect
+cat list_sources.bzl
+
+bazel build //app:hello --aspects //:list_sources.bzl%list_sources --output_groups=manifest
+cat bazel-bin/app/hello.srcs.txt
+
+bazel build //test:hello_test --aspects //:list_sources.bzl%list_sources --output_groups=manifest
+cat bazel-bin/test/hello_test.srcs.txt
+```
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ccbe3922-6de4-4baf-b937-1707da81277a" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c066f4f3-08a3-4f61-bd91-a8fdb77c68d0" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/5b7c2060-f7bd-4606-9301-2f9ae5e6eeae" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/162ee151-4f60-48ec-9f17-8fa916f092fe" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c84c9362-b9ba-42fd-96bd-5770886e0aff" />
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3f417add-3662-4f0a-8836-0a6e6d00be79" />
+
