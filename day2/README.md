@@ -150,3 +150,37 @@ Note
     - is called configured query 
     - is bazed on configured target graph ( post-analysis phase )
 </pre>
+
+## Lab - Understanding Action key
+<pre>
+- A SHA-256 hash that uniquely identifies a build action
+- Bazel uses it as the cache lookup key
+- if the key matches something in the cache, the action is skipped entirely
+- This is how action key is computed
+  Action Key = SHA-256 (
+     hash of every input file content +
+     hash of the command string +
+     hash of the compiler binary +
+     hash of declared environment vars +
+     Bazel version
+  )
+</pre>
+
+```
+cd ~/bazel-june-2026
+git pull
+cd day2/cpp-bazel-with-gtest
+cat MODULE.bazel
+cat app/BUILD
+cat lib/BUILD
+cat test/BUILD
+
+bazel aquery //app:hello --output=text 2>/dev/null \
+   | grep -iE "key|digest|hash|fingerprint"
+
+bazel aquery //app:hello --output=text 2>/dev/null \
+   | grep -E "|ActionKey:|Mnemonic:|Target:"
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/029f4ca6-7644-42d7-9330-c4baeb8eee56" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d0bd23d5-27dc-4d61-b844-1454efbe961d" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a06c6fea-2b52-41cc-86d3-8318a14945a3" />
