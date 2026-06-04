@@ -217,3 +217,19 @@ bazel query //src:hello --output=build 2>/dev/null
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b4a153ea-46d8-4180-beb0-9e5b3b8c9229" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/4a4e9498-0028-4fa6-846b-014509c5e398" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ecfae6fe-888d-4494-9a68-bdffa1b8485d" />
+
+## Lab - Using glob function in BUILD file to include multiple cpp/h files 
+```
+cd ~/bazel-june-2026
+git pull
+cd day2/cpp-bazel-with-include-all-cpp-files
+tree
+
+cat MODULE.bazel
+cat app/BUILD
+bazel build //...
+bazel run //...
+bazel clean --async --expunge
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/733942c9-058f-4902-b22e-96c26b0907af" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/2e6e3866-f738-4cae-ae97-fcedefa8c0f6" />
