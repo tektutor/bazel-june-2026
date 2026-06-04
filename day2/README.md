@@ -254,3 +254,23 @@ bazel clean
 ```
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1e5cd9aa-40c0-40a7-bb21-3d76353dac52" />
+
+## Lab - Yet another Custom Bazel rule to auto-genearate a file using a template
+```
+cd ~/bazel-june-2026
+git pull
+cd day2/yet-another-custom-bazel-rule
+tree
+
+cat MODULE.bazel
+cat BUILD
+cat defs.bzl
+cat config.txt.tpl
+
+bazel build //:app_config
+
+bazel clean
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a3a24b06-b9dc-42f1-9253-c2ac45307ae0" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/be5a510f-8c23-423e-b40b-067c05d79387" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c396dee0-17b7-4c0b-860d-0b563674692d" />
