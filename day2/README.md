@@ -138,3 +138,15 @@ bazel aquery //app:hello --output=jsonproto 2>/dev/null | grep -oE '[^"]+\.(cpp|
 ```
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0a2ed050-03a3-4e54-8512-149b6de539d5" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/5ad70895-5017-494c-b6aa-bbe13aaebf27" />
+
+Note
+<pre>
+- Bazel supports 3 types of query
+  - query
+    - this is purely based on BUILD.bazel file
+  - aquery
+    - is based on action graph
+  - cquery
+    - is called configured query 
+    - is bazed on configured target graph ( post-analysis phase )
+</pre>
