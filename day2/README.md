@@ -34,6 +34,7 @@ bazel build //app:hello
 bazel run //app:hello
 
 bazel run //test:hello_test --test_output=all
+bazel test //test:hello_test --test_output=all
 ```
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/4aee204d-e00b-41f0-9b94-98aa7b466ef0" />
