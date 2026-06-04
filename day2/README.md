@@ -1,4 +1,4 @@
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3a825b01-18dd-4ab3-98f9-e3be4390d1c7" /># Day 2
+# Day 2
 
 ## Today's Agenda
 <pre>
@@ -77,3 +77,4 @@ bazel query 'labels(deps, //test:hello_test)'
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/e06de635-2251-479a-9372-83600d6eba5f" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/67a13b9c-50ad-465b-8683-c1e6309a37ab" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c5baac57-d868-4848-a8ae-8c2cd11494dc" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3a825b01-18dd-4ab3-98f9-e3be4390d1c7" />
