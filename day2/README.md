@@ -233,3 +233,24 @@ bazel clean --async --expunge
 ```
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/733942c9-058f-4902-b22e-96c26b0907af" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/2e6e3866-f738-4cae-ae97-fcedefa8c0f6" />
+
+## Lab - Using Custom Bazel Rule to auto-generate code
+```
+cd ~/bazel-june-2026
+git pull
+cd day2/custom-bazel-rule
+tree
+
+cat MODULE.bazel
+cat BUILD
+cat defs.bzl
+cat main.cpp
+cat tools/generate-code.py
+cat tools/BUILD
+
+bazel run //:app
+ls -l bazel-bin
+bazel clean
+```
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1e5cd9aa-40c0-40a7-bb21-3d76353dac52" />
