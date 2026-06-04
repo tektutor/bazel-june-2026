@@ -22,7 +22,7 @@
 - [ ] Macro
 - [ ] Aspect
 - [&#10003] Toolchain
-- [ ] Configuration
+- [&#10003] Configuration
 - [&#10003] Visibility
 - [ ] Tag
 - [&#10003] Introduction to modern build systems
