@@ -95,6 +95,9 @@ bazel build --config=release //app:hello
 ls
 tree bazel-out
 
+# To build all targets
+bazel build //...
+
 # To see the compiler flags used
 bazel build  //app:hello --subcommands
 bazel build --config=debug //app:hello --subcommands
