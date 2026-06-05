@@ -76,6 +76,10 @@ bazel test //src:hello_slow_test --test_output=all
 
 ## Lab - Custom Test rules
 ```
+cd ~/bazel-june-2026
+git pull
+cd day3/custom-test-rule
+
 tree
 cat MODULE.bazel
 cat kvstore/BUILD.bazel
