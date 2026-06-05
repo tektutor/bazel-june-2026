@@ -437,3 +437,18 @@ Select "Freestyle project"
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/940b703c-301d-4eee-a627-d4531aec6159" />
 Click "OK" button
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3b44f083-34fe-4138-8b55-dcf50e7729b3" />
+
+General section
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/4189cd4f-7eba-433c-9880-c4695d943c90" />
+
+Source Code Management section
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3c6bdd1f-bea1-4b15-8e43-c35057015675" />
+
+Triggers section
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/73bf8381-4c96-4147-8c66-ce9557000d99" />
+
+Build Steps
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f2c5fcd0-7154-4f05-b4a6-3498a16ca781" />
+Click "Add Build Step"
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ccae0ad3-6cda-4934-a84d-37356cafc1bd" />
+Select "Execute shell"
