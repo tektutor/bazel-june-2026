@@ -15,7 +15,7 @@
 - [&#10003] Bazel testing framework
 - [&#10003] including bazel test
 - [&#10003] test rules
-- [ ] basic coverage concepts  
+- [✅] basic coverage concepts  
 </pre>
 
 
