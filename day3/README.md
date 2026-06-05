@@ -381,5 +381,6 @@ cd day3/bazel-caching
 cat MODULE.bazel
 cat .bazelrc
 
-bazel build //... --config=release --config=linux_arm --config=remote-cache
+bazel build //... --config=release --config=linux_arm --config=remote-cache -s
+bazel build //... --config=release --config=linux_arm --config=linux_x86 -s
 ```
