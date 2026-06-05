@@ -3,7 +3,7 @@
 ## Today's Agenda
 <pre>
 - [✅] Monorepo concepts in Bazel
-  - [&#10003] detailed overview along with hands-on examples
+  - [✅] detailed overview along with hands-on examples
 - [ ] Bazel caching mechanisms
   - [✅] local cache
   - [✅] remote cache
