@@ -243,3 +243,69 @@ bazel build //src:hello \
   --noremote_accept_cached=false \
   --remote_upload_local_results=true
 ```
+
+#### Cache Optimization Techniques
+
+.bazelrc
+<pre>
+# --- Remote cache: the local bazel-remote container ---
+# gRPC endpoint you published with -p 9092:9092.
+# build options are inherited by test, run, and coverage, so this
+# one line covers `bazel test` too.
+build --remote_cache=grpc://localhost:9092
+
+# --- Test output ---
+# Show output only when a test fails, instead of staying silent.
+test --test_output=errors
+
+# --- Tag-based test filtering (your demo) ---
+#   bazel test //... --config=integration   runs only integration tests
+#   bazel test //... --config=unit          runs only unit tests
+test:integration --test_tag_filters=integration
+test:unit --test_tag_filters=unit
+
+# --- For later, when a second machine or CI joins ---
+#   bazel build //... --config=dev   reads the cache, uploads nothing
+#   bazel build //... --config=ci    reads and writes the cache
+build:dev --noremote_upload_local_results
+build:ci --remote_upload_local_results  
+</pre>
+
+Check if bazel is actually loading .bazelrc
+```
+bazel build //... --announce_rc
+```
+
+Confirm Cache server is reachable
+```
+curl http://localhost:9090/status
+```
+
+Cold build to populate the cache
+```
+bazel clean --expunge
+bazel build //...
+```
+
+Confirm data actually landed in the container
+```
+du -sh /tmp/bazel-remote-cache
+curl http://localhost:9090/status
+```
+
+The proof: expunge again, rebuild, watch remote hits.
+```
+bazel clean --expunge
+bazel build //...
+```
+
+Contrast: turn the cache off and watch it get slow again
+```
+bazel clean --expunge
+bazel build //... --remote_cache=
+```
+
+Demonstrate the tag-filter configs
+```
+bazel test //... --config=integration --announce_rc
+```
