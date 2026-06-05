@@ -2,19 +2,19 @@
 
 ## Today's Agenda
 <pre>
-- [ ] Monorepo concepts in Bazel
-  - [ ] detailed overview along with hands-on examples
+- [&#10003] Monorepo concepts in Bazel
+  - [&#10003] detailed overview along with hands-on examples
 - [ ] Bazel caching mechanisms
-  - [ ] local cache
-  - [ ] remote cache
-  - [ ]cache optimization techniques (with hands-on)
-- [ ] Bazel module system (Bzlmod) and registry usage
-  - [ ] hands-on using Artifactory or Git-based registries
+  - [✅] local cache
+  - [✅] remote cache
+  - [✅] cache optimization techniques (with hands-on)
+- [✅] Bazel module system (Bzlmod) and registry usage
+  - [✅ ] hands-on using Artifactory or Git-based registries
   - [&#10003] Custom rule development using Starlark
-  - [ ] with practical examples (beyond macros)
+  - [✅] with practical examples (beyond macros)
 - [&#10003] Bazel testing framework
 - [&#10003] including bazel test
-- [ ] test rules
+- [&#10003] test rules
 - [ ] basic coverage concepts  
 </pre>
 

@@ -20,11 +20,11 @@
 - [&#10003] Sandbox Isolation
 - [&#10003] Dependency Management (Modern Bazel)
 - [&#10003] Macro
-- [ ] Aspect
+- [✅ ] Aspect
 - [&#10003] Toolchain
 - [&#10003] Configuration
 - [&#10003] Visibility
-- [ ] Tag
+- [✅ ] Tag
 - [&#10003] Introduction to modern build systems
 - [&#10003] Install Bazel in Linux
 - [&#10003] Build a C++ Project using Bazel
