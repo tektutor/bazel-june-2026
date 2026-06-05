@@ -309,3 +309,15 @@ Demonstrate the tag-filter configs
 ```
 bazel test //... --config=integration --announce_rc
 ```
+
+## Lab - Bazel Documents as Code
+```
+cd ~/bazel-june-2026
+git pull
+cd day3/docs-as-code
+cat docs/BUILD
+bazel build //docs:training_notes
+bazel build //docs:training_notes
+
+bazel run //src:md2pdf -- --source https://github.com/tektutor/bazel-june-2026.git --folders day1 day2 day3 --output $PWD/notes.pdf
+```
