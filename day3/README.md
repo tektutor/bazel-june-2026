@@ -126,6 +126,11 @@ bazel coverage //src:hello_test \
   --combined_report=lcov
 lcov --summary bazel-out/_coverage/_coverage_report.dat 2>&1
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0d6ce9b8-e386-4096-ad77-42f47e77c3d7" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9dcdc001-b58b-4459-85fb-729b7f975386" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1802e8a7-54b7-45bd-9a43-86d4add4c165" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/18aabe35-feeb-46f2-a4b6-223e7d5e9a2e" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9d4073c7-a532-4113-a574-5669cf2276c5" />
 
 
 ## Lab - Bazel Caching 
