@@ -12,6 +12,22 @@
   - [ ] configuration and invocation approaches  
 </pre>
 
+## Lab - Upgrade your gcc and g++ in Ubuntu
+```
+sudo apt update && apt install -y gcc-14 g++-14
+gcc-14 --version
+g++-14 --version
+```
+
+## Lab - Install docker
+```
+sudo apt install -y docker.io
+sudo usermod -aG docker $USER
+sudo su $USER
+docker --version
+docker images
+```
+
 ## Lab - Bazel Tag
 <pre>
 - is a string label you can attach to a target to control how it behaves during
