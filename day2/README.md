@@ -6,10 +6,10 @@
   - [&#10003] detailed overview along with hands-on examples
 - [ ] Bazel caching mechanisms
   - [✅] local cache
-  - [ ] remote cache
-  - [ ] cache optimization techniques (with hands-on)
-- [ ] Bazel module system (Bzlmod) and registry usage
-  - [ ] hands-on using Artifactory or Git-based registries
+  - [✅] remote cache
+  - [✅] cache optimization techniques (with hands-on)
+- [✅] Bazel module system (Bzlmod) and registry usage
+  - [✅ ] hands-on using Artifactory or Git-based registries
   - [&#10003] Custom rule development using Starlark
   - [✅] with practical examples (beyond macros)
 - [&#10003] Bazel testing framework
