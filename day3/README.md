@@ -19,9 +19,9 @@
 - generally it is used to group automated test cases in Bazel 
 </pre>
 ```
-cd ~/bazel-may-2026
+cd ~/bazel-june-2026
 git pull
-cd day2/lab10-tags
+cd day3/bazel-tag
 tree
 cat MODULE.bazel
 cat src/BUILD
