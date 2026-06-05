@@ -4,17 +4,17 @@
 <pre>
 - [✅] Monorepo concepts in Bazel
   - [✅] detailed overview along with hands-on examples
-- [ ] Bazel caching mechanisms
+- [✅] Bazel caching mechanisms
   - [✅] local cache
   - [✅] remote cache
   - [✅] cache optimization techniques (with hands-on)
 - [✅] Bazel module system (Bzlmod) and registry usage
   - [✅ ] hands-on using Artifactory or Git-based registries
-  - [&#10003] Custom rule development using Starlark
+  - [✅] Custom rule development using Starlark
   - [✅] with practical examples (beyond macros)
-- [&#10003] Bazel testing framework
-- [&#10003] including bazel test
-- [&#10003] test rules
+- [✅] Bazel testing framework
+- [✅] including bazel test
+- [✅] test rules
 - [✅] basic coverage concepts  
 </pre>
 
