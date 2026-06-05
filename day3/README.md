@@ -390,3 +390,30 @@ qemu-aarch64 ./hello
 ```
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/836829a8-7e41-4e46-8cec-2a11f20164c1" />
+
+## Lab - CI/CD with Jenkins
+
+```
+# Download Jenkins
+cd ~/Downloads
+wget https://get.jenkins.io/war-stable/2.555.2/jenkins.war
+ls -l jenkins.war
+
+# Launch Jenkins from command-line
+java -jar ./jenkins.war
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/95e17af3-497a-44d7-900b-3ee7f09e47ae" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/fc4f5b7a-75ef-4b37-82e9-b1923ca0aef8" />
+
+You may now access your Jenkins Dashboard from your Ubuntu Lab Machine Web browser
+```
+localhost:8080
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f49efb1e-e265-4177-9eac-a817510d5e50" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f65a2901-4bdf-4ded-a022-0e29e3282698" />
+Click Continue
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b1f66501-2064-4670-b241-cf050b95c11b" />
+Select "Install Suggested Plugins"
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7ca3fe1d-c54e-4f9f-a1a9-4ff0ae6a01c7" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9f7260fc-4ac8-43ce-b4bb-ea5012e31100" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f13c85f0-031e-4e0b-835e-37b8dc8ad657" />
