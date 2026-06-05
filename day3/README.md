@@ -11,3 +11,32 @@
 - Docs-as-Code integration with Bazel
   - configuration and invocation approaches  
 </pre>
+
+## Lab - Custom Test rules
+```
+tree
+cat MODULE.bazel
+cat kvstore/BUILD.bazel
+cat testinintegration_test.bzlg/BUILD.bazel
+cat testing/
+
+# Find how many test cases are there
+bazel query 'tests(//...)'
+
+# Run all test cases
+bazel test //...
+
+# Run only integration test cases
+bazel test //... --test_tag_filters=integration
+
+# Run only unit-test cases
+bazel test //... --test_tag_filters=unit
+
+# Run all test cases except integration test cases
+bazel test //... --test_tag_filters=-integration
+```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/cc928b03-bbf6-49f1-9ff1-1fadfe1da8bf" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d5330283-f926-4c64-9ca9-565dc8978ab0" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/5525788c-b2cc-4996-9d8b-f3db4647115f" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/719ea4d9-74a3-4a39-892f-52558eea2994" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7fcb95ec-42cc-48d3-9fdd-5e54412b5d46" />
