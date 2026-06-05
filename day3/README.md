@@ -12,6 +12,11 @@
   - [✅] configuration and invocation approaches  
 </pre>
 
+## Post test
+<pre>
+https://docs.google.com/forms/d/e/1FAIpQLSd0028HlyqSkYqIRK1Tl_Z_GIK7F45Y3cophJQ9CoMNVeLrSw/viewform?usp=sharing&ouid=107597853350918517382  
+</pre>
+
 ## Lab - Bazel Monorepo example
 ```
 cd ~/bazel-june-2026
