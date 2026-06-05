@@ -12,6 +12,24 @@
   - [ ] configuration and invocation approaches  
 </pre>
 
+## Lab - Bazel Monorepo example
+```
+cd ~/bazel-june-2026
+git pull
+cd day3/bazel-monorepo-example
+tree
+cat app/cli/BUILD
+
+bazel build //app/cli:cli
+bazel run //app/cli:cli
+
+login jegan root@123
+get /whoami Bearer amVnYW4uYjZmY2ZlYmZkY2M4ZTgzNWNiZWU3YzczYTU0NWU1MDc0N2RiODhlOWQzNWZmYzhmMjM5OTI4MjhlZWE4OWEyYQ==
+post /login username=jegan
+post /login username=jegan&password=root@123
+exit
+```
+
 ## Lab - Upgrade your gcc and g++ in Ubuntu
 ```
 sudo apt update && apt install -y gcc-14 g++-14
