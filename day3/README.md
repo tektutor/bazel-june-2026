@@ -428,3 +428,4 @@ Select "Install Suggested Plugins"
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7ca3fe1d-c54e-4f9f-a1a9-4ff0ae6a01c7" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9f7260fc-4ac8-43ce-b4bb-ea5012e31100" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f13c85f0-031e-4e0b-835e-37b8dc8ad657" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f4d4ec6f-66a0-4fdb-b6c7-49f78f34957b" />
