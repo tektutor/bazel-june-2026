@@ -385,6 +385,7 @@ cat .bazelversion
 bazel run //:hello --platforms=//:aarch64_linux --run_under="qemu-aarch64"
 
 cd bazel-bin
+file ./hello
 qemu-aarch64 ./hello
 ```
 
