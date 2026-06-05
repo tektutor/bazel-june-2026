@@ -378,9 +378,9 @@ sudo apt install -y qemu-user
 
 cd ~/bazel-june-2026
 git pull
-cd day3/bazel-caching
+cd day3/cross-compilation
 cat MODULE.bazel
-cat .bazelrc
+cat .bazelversion
 
 bazel run //:hello --platforms=//:aarch64_linux --run_under="qemu-aarch64"
 
