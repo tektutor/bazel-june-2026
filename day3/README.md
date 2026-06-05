@@ -113,7 +113,7 @@ sudo apt update && sudo apt install -y lcov
 
 cd ~/bazel-june-2026
 git pull
-cd daye/code-coverage
+cd day3/code-coverage
 tree
 cat MODULE.bazel
 cat src/BUILD
