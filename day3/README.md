@@ -2,15 +2,35 @@
 
 ## Today's Agenda
 <pre>
-- Incremental builds and rebuild behavior
-  - understanding dependency tracking and rebuild triggers
-- C/C++ and embedded use cases
-  - including cross-compilation (e.g., Linux ARM toolchain setup)
-- CI/CD integration
-  - configuring Bazel in pipelines such as Jenkins or GitHub Actions
-- Docs-as-Code integration with Bazel
-  - configuration and invocation approaches  
+- [ ] Incremental builds and rebuild behavior
+  - [ ] understanding dependency tracking and rebuild triggers
+- [ ] C/C++ and embedded use cases
+  - [ ] including cross-compilation (e.g., Linux ARM toolchain setup)
+- [ ] CI/CD integration
+  - [ ] configuring Bazel in pipelines such as Jenkins or GitHub Actions
+- [ ] Docs-as-Code integration with Bazel
+  - [ ] configuration and invocation approaches  
 </pre>
+
+## Lab - Bazel Tag
+<pre>
+- is a string label you can attach to a target to control how it behaves during
+  testing, etc
+- generally it is used to group automated test cases in Bazel 
+</pre>
+```
+cd ~/bazel-may-2026
+git pull
+cd day2/lab10-tags
+tree
+cat MODULE.bazel
+cat src/BUILD
+
+bazel test //src:all --test_tag_filters=requires-network --test_output=all
+bazel test //src:all --test_tag_filters=unit --test_output=all
+bazel test //src:all --test_tag_filters=integration --test_output=all
+bazel test //src:hello_slow_test --test_output=all
+```
 
 ## Lab - Custom Test rules
 ```
@@ -40,3 +60,4 @@ bazel test //... --test_tag_filters=-integration
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/5525788c-b2cc-4996-9d8b-f3db4647115f" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/719ea4d9-74a3-4a39-892f-52558eea2994" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7fcb95ec-42cc-48d3-9fdd-5e54412b5d46" />
+
