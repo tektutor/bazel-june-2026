@@ -371,6 +371,10 @@ bazel run //src:md2pdf -- --source https://github.com/tektutor/bazel-june-2026.g
 
 ## Lab - Embedded application that supports different processor architectures(platforms)
 ```
+# Install 64-bit ARM toolchain
+sudo apt update
+sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+
 cd ~/bazel-june-2026
 git pull
 cd day3/bazel-caching
