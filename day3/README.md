@@ -2,14 +2,14 @@
 
 ## Today's Agenda
 <pre>
-- [ ] Incremental builds and rebuild behavior
-  - [ ] understanding dependency tracking and rebuild triggers
-- [ ] C/C++ and embedded use cases
-  - [ ] including cross-compilation (e.g., Linux ARM toolchain setup)
-- [ ] CI/CD integration
-  - [ ] configuring Bazel in pipelines such as Jenkins or GitHub Actions
-- [ ] Docs-as-Code integration with Bazel
-  - [ ] configuration and invocation approaches  
+- [✅] Incremental builds and rebuild behavior
+  - [✅] understanding dependency tracking and rebuild triggers
+- [✅] C/C++ and embedded use cases
+  - [✅] including cross-compilation (e.g., Linux ARM toolchain setup)
+- [✅] CI/CD integration
+  - [✅] configuring Bazel in pipelines such as Jenkins or GitHub Actions
+- [✅] Docs-as-Code integration with Bazel
+  - [✅] configuration and invocation approaches  
 </pre>
 
 ## Lab - Bazel Monorepo example
@@ -18,17 +18,25 @@ cd ~/bazel-june-2026
 git pull
 cd day3/bazel-monorepo-example
 tree
+bazel query //...
 cat app/cli/BUILD
 
 bazel build //app/cli:cli
 bazel run //app/cli:cli
 
+/get health
 login jegan root@123
 get /whoami Bearer amVnYW4uYjZmY2ZlYmZkY2M4ZTgzNWNiZWU3YzczYTU0NWU1MDc0N2RiODhlOWQzNWZmYzhmMjM5OTI4MjhlZWE4OWEyYQ==
 post /login username=jegan
 post /login username=jegan&password=root@123
 exit
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7105eba1-ad00-450c-8755-2d2c046509a4" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b8c9f8b2-eb2d-4ec8-b3c5-f68419897c15" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9123ae60-e556-4e99-95d2-d817fed12c7b" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7cf588f1-f082-4488-9a11-d9e2f724b9e4" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f9444906-23a1-43f0-a243-52a50aa9516a" />
+
 
 ## Lab - Upgrade your gcc and g++ in Ubuntu
 ```
@@ -68,6 +76,10 @@ bazel test //src:hello_slow_test --test_output=all
 
 ## Lab - Custom Test rules
 ```
+cd ~/bazel-june-2026
+git pull
+cd day3/custom-test-rule
+
 tree
 cat MODULE.bazel
 cat kvstore/BUILD.bazel
@@ -101,7 +113,7 @@ sudo apt update && sudo apt install -y lcov
 
 cd ~/bazel-june-2026
 git pull
-cd daye/code-coverage
+cd day3/code-coverage
 tree
 cat MODULE.bazel
 cat src/BUILD
@@ -114,6 +126,11 @@ bazel coverage //src:hello_test \
   --combined_report=lcov
 lcov --summary bazel-out/_coverage/_coverage_report.dat 2>&1
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0d6ce9b8-e386-4096-ad77-42f47e77c3d7" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9dcdc001-b58b-4459-85fb-729b7f975386" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1802e8a7-54b7-45bd-9a43-86d4add4c165" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/18aabe35-feeb-46f2-a4b6-223e7d5e9a2e" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9d4073c7-a532-4113-a574-5669cf2276c5" />
 
 
 ## Lab - Bazel Caching 
@@ -223,6 +240,11 @@ docker inspect -f {{.NetworkSettings.IPAddress}} bazel-remote
 curl http://172.17.0.2:8080/status
 curl http://localhost:9090
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/25b3b7d3-ccb4-4496-a089-cf6bf3bc880f" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/91a04138-ba4e-496f-b64b-0c7cda731b30" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7f97ffd8-8e39-4e8d-beb8-f2ebb643b8fb" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/230ddafe-3631-49f7-add7-6b8b2369613f" />
+
 
 #### Configure remote cache server
 ```
@@ -236,12 +258,17 @@ EOF
 
 #### Perform clean build
 ```
+cd ~/bazel-june-2026
+git pull
+cd day3/bazel-caching
 bazel clean --expunge
 time bazel build --config=remote-cache //src:hello
 
 bazel clean --expunge
 time bazel build --config=remote-cache //src:hello
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/89c5c1f1-0040-4901-97c6-206ca0fb1b49" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/abe2bd21-c052-4e09-8899-d14666120946" />
 
 #### Verify cache hit/miss
 ```
@@ -250,8 +277,10 @@ bazel build --config=remote-cache //src:hello \
 
 # See cache statistics
 cat /tmp/build_events.json | python3 -m json.tool \
-  | grep -E "cacheHit|cacheMiss|remoteCache"
+  | grep -E "hit|remote|cache"
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ba1291e6-1067-40f6-8f5f-910e2ac66883" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/e4a5235a-eb31-4c20-81af-2b7bb1e2fff3" />
 
 #### Force Bazel to always check remote cache first
 ```
@@ -342,11 +371,16 @@ bazel run //src:md2pdf -- --source https://github.com/tektutor/bazel-june-2026.g
 
 ## Lab - Embedded application that supports different processor architectures(platforms)
 ```
+# Install 64-bit ARM toolchain
+sudo apt update
+sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu -y
+
 cd ~/bazel-june-2026
 git pull
 cd day3/bazel-caching
 cat MODULE.bazel
 cat .bazelrc
 
-bazel build //... --config=release --config=linux_arm --config=remote-cache
+bazel build //... --config=release --config=linux_arm --config=remote-cache -s
+bazel build //... --config=release --config=linux_arm --config=linux_x86 -s
 ```

@@ -2,8 +2,8 @@
 
 ## Today's Agenda
 <pre>
-- [&#10003] Monorepo concepts in Bazel
-  - [&#10003] detailed overview along with hands-on examples
+- [✅] Monorepo concepts in Bazel
+  - [✅] detailed overview along with hands-on examples
 - [ ] Bazel caching mechanisms
   - [✅] local cache
   - [✅] remote cache
@@ -15,7 +15,7 @@
 - [&#10003] Bazel testing framework
 - [&#10003] including bazel test
 - [&#10003] test rules
-- [ ] basic coverage concepts  
+- [✅] basic coverage concepts  
 </pre>
 
 
