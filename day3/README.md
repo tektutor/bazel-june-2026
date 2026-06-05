@@ -429,3 +429,11 @@ Select "Install Suggested Plugins"
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9f7260fc-4ac8-43ce-b4bb-ea5012e31100" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f13c85f0-031e-4e0b-835e-37b8dc8ad657" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f4d4ec6f-66a0-4fdb-b6c7-49f78f34957b" />
+
+Let's create new job to setup CI/CD Pipeline
+Click "Create a job" button
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d7bfb6a5-a964-4445-ab06-70f37f3005d2" />
+Select "Freestyle project"
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/940b703c-301d-4eee-a627-d4531aec6159" />
+Click "OK" button
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3b44f083-34fe-4138-8b55-dcf50e7729b3" />
