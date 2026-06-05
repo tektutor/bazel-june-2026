@@ -18,17 +18,25 @@ cd ~/bazel-june-2026
 git pull
 cd day3/bazel-monorepo-example
 tree
+bazel query //...
 cat app/cli/BUILD
 
 bazel build //app/cli:cli
 bazel run //app/cli:cli
 
+/get health
 login jegan root@123
 get /whoami Bearer amVnYW4uYjZmY2ZlYmZkY2M4ZTgzNWNiZWU3YzczYTU0NWU1MDc0N2RiODhlOWQzNWZmYzhmMjM5OTI4MjhlZWE4OWEyYQ==
 post /login username=jegan
 post /login username=jegan&password=root@123
 exit
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7105eba1-ad00-450c-8755-2d2c046509a4" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b8c9f8b2-eb2d-4ec8-b3c5-f68419897c15" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9123ae60-e556-4e99-95d2-d817fed12c7b" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7cf588f1-f082-4488-9a11-d9e2f724b9e4" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f9444906-23a1-43f0-a243-52a50aa9516a" />
+
 
 ## Lab - Upgrade your gcc and g++ in Ubuntu
 ```
