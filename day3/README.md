@@ -240,6 +240,11 @@ docker inspect -f {{.NetworkSettings.IPAddress}} bazel-remote
 curl http://172.17.0.2:8080/status
 curl http://localhost:9090
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/25b3b7d3-ccb4-4496-a089-cf6bf3bc880f" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/91a04138-ba4e-496f-b64b-0c7cda731b30" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7f97ffd8-8e39-4e8d-beb8-f2ebb643b8fb" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/230ddafe-3631-49f7-add7-6b8b2369613f" />
+
 
 #### Configure remote cache server
 ```
@@ -253,12 +258,17 @@ EOF
 
 #### Perform clean build
 ```
+cd ~/bazel-june-2026
+git pull
+cd day3/bazel-caching
 bazel clean --expunge
 time bazel build --config=remote-cache //src:hello
 
 bazel clean --expunge
 time bazel build --config=remote-cache //src:hello
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/89c5c1f1-0040-4901-97c6-206ca0fb1b49" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/abe2bd21-c052-4e09-8899-d14666120946" />
 
 #### Verify cache hit/miss
 ```
@@ -267,8 +277,10 @@ bazel build --config=remote-cache //src:hello \
 
 # See cache statistics
 cat /tmp/build_events.json | python3 -m json.tool \
-  | grep -E "cacheHit|cacheMiss|remoteCache"
+  | grep -E "hit|remote|cache"
 ```
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ba1291e6-1067-40f6-8f5f-910e2ac66883" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/e4a5235a-eb31-4c20-81af-2b7bb1e2fff3" />
 
 #### Force Bazel to always check remote cache first
 ```
