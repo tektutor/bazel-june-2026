@@ -374,6 +374,7 @@ bazel run //src:md2pdf -- --source https://github.com/tektutor/bazel-june-2026.g
 # Install 64-bit ARM toolchain
 sudo apt update
 sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu -y
+sudo apt install -y qemu-user
 
 cd ~/bazel-june-2026
 git pull
@@ -381,6 +382,10 @@ cd day3/bazel-caching
 cat MODULE.bazel
 cat .bazelrc
 
-bazel build //... --config=release --config=linux_arm --config=remote-cache -s
-bazel build //... --config=release --config=linux_arm --config=linux_x86 -s
+bazel run //:hello --platforms=//:aarch64_linux --run_under="qemu-aarch64"
+
+cd bazel-bin
+qemu-aarch64 ./hello
 ```
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/836829a8-7e41-4e46-8cec-2a11f20164c1" />
