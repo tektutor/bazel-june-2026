@@ -411,6 +411,17 @@ localhost:8080
 ```
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f49efb1e-e265-4177-9eac-a817510d5e50" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f65a2901-4bdf-4ded-a022-0e29e3282698" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1ab506f5-1b05-4e79-bb59-e0076e696661" />
+Click Retry
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/79e7b0a6-b6fb-43cb-b68d-d09e548a7df7" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d1c03449-4db9-4d6b-867c-c05b9ee08361" />
+Click "Save and Continue"
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c7151f97-e2ac-45ff-99e4-f98783e443f1" />
+Click "Save and Finish"
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1141a3e3-bdf1-4614-9754-88874d944741" />
+Click "Start using Jenkins"
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/e3ef20ed-bccd-455e-bdbb-5eb34fe913cc" />
+
 Click Continue
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b1f66501-2064-4670-b241-cf050b95c11b" />
 Select "Install Suggested Plugins"
