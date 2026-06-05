@@ -2,35 +2,35 @@
 
 ## Today's Agenda
 <pre>
-- [&#10003] Bazel Overview
-- [&#10003] Why Bazel?
-- [&#10003] Bazel High-Level Architecture
-- [&#10003] Understanding Bazel Jargons
-- [&#10003] Workspace
-- [&#10003] Build Process & Artifacts
-- [&#10003] Artifact
-- [&#10003] Action
-- [&#10003] Loading Phase
-- [&#10003] Analysis Phase
-- [&#10003] Execution Phase
-- [&#10003] Dependency
-- [&#10003] Incrementality & Reproducibility
-- [&#10003] Hermetic Builds
-- [&#10003] Action Key
-- [&#10003] Sandbox Isolation
-- [&#10003] Dependency Management (Modern Bazel)
-- [&#10003] Macro
+- [✅] Bazel Overview
+- [✅] Why Bazel?
+- [✅] Bazel High-Level Architecture
+- [✅] Understanding Bazel Jargons
+- [✅] Workspace
+- [✅] Build Process & Artifacts
+- [✅] Artifact
+- [✅] Action
+- [✅] Loading Phase
+- [✅] Analysis Phase
+- [✅] Execution Phase
+- [✅] Dependency
+- [✅] Incrementality & Reproducibility
+- [✅] Hermetic Builds
+- [✅] Action Key
+- [✅] Sandbox Isolation
+- [✅] Dependency Management (Modern Bazel)
+- [✅] Macro
 - [✅ ] Aspect
-- [&#10003] Toolchain
-- [&#10003] Configuration
-- [&#10003] Visibility
+- [✅] Toolchain
+- [✅] Configuration
+- [✅] Visibility
 - [✅ ] Tag
-- [&#10003] Introduction to modern build systems
-- [&#10003] Install Bazel in Linux
-- [&#10003] Build a C++ Project using Bazel
-- [&#10003] Build a Python Project using Bazel
-- [&#10003] Build a Java Project using Bazel  
-- [&#10003] Build a C# Project using Bazel  
+- [✅] Introduction to modern build systems
+- [✅] Install Bazel in Linux
+- [✅] Build a C++ Project using Bazel
+- [✅] Build a Python Project using Bazel
+- [✅] Build a Java Project using Bazel  
+- [✅] Build a C# Project using Bazel  
 </pre>
 
 ## Lab - Install bazel and other build tools ( do this on your Ubuntu Cloud Lab Machine Terminal )
