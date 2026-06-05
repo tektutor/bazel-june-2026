@@ -11,7 +11,7 @@
 - [ ] Bazel module system (Bzlmod) and registry usage
   - [ ] hands-on using Artifactory or Git-based registries
   - [&#10003] Custom rule development using Starlark
-  - [ ] with practical examples (beyond macros)
+  - [✅] with practical examples (beyond macros)
 - [&#10003] Bazel testing framework
 - [&#10003] including bazel test
 - [&#10003] test rules
